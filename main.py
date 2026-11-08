@@ -35,7 +35,7 @@ bot = MonsieurPelican()
 async def index_old_results(ctx: discord.ApplicationContext, scan_days: int = 10):
     await ctx.defer(ephemeral=True)
     
-    if ctx.author.id != os.getenv("ADMIN_ID"):
+    if ctx.author.id != int(os.getenv("ADMIN_ID")):
         await ctx.respond("You do not have permission for this command.")
         return
     
