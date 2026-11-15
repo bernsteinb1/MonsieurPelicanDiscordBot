@@ -8,7 +8,7 @@ async def scan_message(bot: discord.Bot, message: discord.Message):
         word = "".join(filter(lambda c: c.isalpha(), word))
         if len(word) < 2:
             continue
-        if word[-2:] == 'er':
+        if word[-2:].lower() == 'er':
             er_words.append(word)
     if not er_words:
         return

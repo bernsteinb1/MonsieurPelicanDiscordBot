@@ -1,13 +1,3 @@
-# RNGdle 🎲 865364
-
-# 🟩 UNCOMMON • Top 45%
-
-# 🟩 🍽️ Eighty-Six
-# 🟩 🔗 2 Consecutive Numbers (Nearby)
-# ⬜ 🧩 Mini Scramble
-# +10 more
-
-# 6,265 EP
 import discord
 import datetime
 import daily_game

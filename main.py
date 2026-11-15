@@ -32,7 +32,7 @@ asyncio.set_event_loop(loop)
 bot = MonsieurPelican()
 
 @bot.command(description="Index older results into database")
-async def index_old_results(ctx: discord.ApplicationContext, scan_days: int = 10):
+async def index_old_results(ctx: discord.ApplicationContext, scan_days: float = 10):
     await ctx.defer(ephemeral=True)
     
     if ctx.author.id != int(os.getenv("ADMIN_ID")):
